@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skillwise | Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+    }
+    .navbar {
+      background: linear-gradient(to right,#0bda51,#7cfc00);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .form-container {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .form-control {
+      border-radius: 15px;
+    }
+    .btn-submit {
+      background: #1e90ff;
+      border-radius: 30px;
+      width: 200px;
+    }
+    footer {
+      background: #e3e6ea;
+      border-top: 1px solid #c8c6c6;
+      padding: 15px 0;
+      text-align: center;
+      color: #333;
+      font-weight: 500;
+    }
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    .social-icons img {
+      height: 35px;
+      width: 35px;
+      margin: 0 10px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+      <a class="navbar-brand text-light fs-3" href="#">Skillwise</a>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h1 class="fs-4 fw-bold text-dark mb-3">Master skills. Expand knowledge. Shape your future with Skillwise.</h1>
+        <h2 class="fs-5 fw-semibold text-dark">Courses We Offer at Skillwise:</h2>
+        <ul class="list-group list-group-flush shadow-sm mb-4">
+          <li class="list-group-item ps-4 border-start border-3 fw-semibold m-2 rounded">🌐 Web Development</li>
+          <li class="list-group-item ps-4 border-start border-3 fw-semibold m-2 rounded">📱 App Development</li>
+          <li class="list-group-item ps-4 border-start border-3 fw-semibold m-2 rounded">🔒 Cybersecurity</li>
+          <li class="list-group-item ps-4 border-start border-3 fw-semibold m-2 rounded">📊 Data Science</li>
+          <li class="list-group-item ps-4 border-start border-3 fw-semibold m-2 rounded">☁️ DevOps</li>
+        </ul>
+        <h2 class="fs-5 fw-bold mt-4">Follow us!</h2>
+        <div class="social-icons mt-2">
+          <a href="#"><img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9?h=253" alt="Facebook"></a>
+          <a href="#"><img src="https://i.pinimg.com/736x/b2/f8/28/b2f828513f21444829a619ce563d4d4e.jpg" alt="Instagram"></a>
+        </div>
+        <h2 class="fs-5 fw-bold mt-4">Contact Us: <span class="text-primary">+91 9163938079</span></h2>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-container p-4">
+          <h3 class="text-center text-light p-2 mb-3" style="background:#1e90ff; border-radius:10px;">Enquiry Now!</h3>
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="one" class="form-label fw-bold">Name:</label>
+              <input type="text" class="form-control" id="one" name="student" placeholder="Enter name:" required>
+            </div>
+            <div class="mb-3">
+              <label for="two" class="form-label fw-bold">Email:</label>
+              <input type="email" class="form-control" id="two" name="email" placeholder="Enter Email:" required>
+            </div>
+            <div class="mb-3">
+              <label for="three" class="form-label fw-bold">Mobile No:</label>
+              <input type="text" class="form-control" id="three" name="roll" placeholder="Enter Mobile Number:" required>
+            </div>
+            <div class="mb-4">
+              <label for="course" class="form-label fw-bold">Select Course:</label>
+              <select class="form-control" id="course" name="course" required>
+                <option value="">-- Choose a Course --</option>
+                <option value="web-dev">Web Development</option>
+                <option value="data-science">Data Science & AI</option>
+                <option value="business">Business & Marketing</option>
+                <option value="design">Design & Creativity</option>
+                <option value="cybersecurity">Cybersecurity & IT</option>
+                <option value="finance">Finance & Investing</option>
+                <option value="app-dev">App Development</option>
+                <option value="personal-growth">Personal Growth & Productivity</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn text-light fs-5 btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="mb-0">&copy; 2025 Skillwise. All rights reserved. | 📞 <a href="tel:+919163938079">+91 9163938079</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
